@@ -10,18 +10,8 @@
 ---
 
 ## 📝 Project Description
-Rangrej Tower is a modern, stylish and easy-to-use e-commerce platform offering high-quality clothing and accessories at affordable prices. With a clean shopping experience, fast delivery, and a customer-first approach, Rangrej Tower brings fashion and convenience together in one place.
-
----
-
-## 🔐 Login Details (If Required)
-If your project includes login, provide demo credentials:
-
-**Username / Email:** demo@gmail.com
-
-**Password:** 12345
-
-*(If no login is required, remove this section)*
+Rangrej Tower is a modern, stylish and easy-to-use e-commerce platform offering high-quality clothing and accessories at affordable prices.
+With a clean shopping experience, fast delivery, and a customer-first approach, Rangrej Tower brings fashion and convenience together in one place.
 
 ---
 
