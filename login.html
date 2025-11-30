@@ -1,0 +1,55 @@
+<!-- Save as login.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — Login</title>
+  <meta name="description" content="Login to Rangrej Tower (demo)" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="login">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area">
+        <label class="sr-only" for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search products..." />
+      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link active" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Login</h1>
+    <div class="card small">
+      <form id="loginForm" onsubmit="login(event)" novalidate>
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+        <label for="password">Password</label>
+        <input id="password" type="password" required />
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Login</button>
+          <a class="btn btn-ghost" href="index.html">Cancel</a>
+        </div>
+      </form>
+    </div>
+    <p class="muted">Demo login only — no backend. After login you will be redirected to Home.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

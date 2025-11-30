@@ -1,0 +1,65 @@
+<!-- Save as product.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — Product</title>
+  <meta name="description" content="Product detail page" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="product">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area" role="search">
+        <label class="sr-only" for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search products..." />
+      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <a class="btn btn-ghost" id="backBtn" href="products.html" aria-label="Back to products">&larr; Back to products</a>
+
+    <section id="detail-wrapper" class="detail-wrapper" aria-live="polite">
+      <!-- app.js will populate product detail here using the ?id= query param -->
+      <!-- Fallback static placeholder structure (replace images with assets/products/<id>.jpg) -->
+      <div class="detail-image card">
+        <img id="product-img" src="assets/products/placeholder-large.jpg" alt="Product image — replace" />
+      </div>
+
+      <div class="detail-info card">
+        <h2 id="product-title">Product Title (replace)</h2>
+        <div class="meta" id="product-meta">Category • Rating</div>
+        <div class="price-row">
+          <div class="price" id="product-price">₹999</div>
+          <div class="old-price muted" id="product-old">₹1,299</div>
+        </div>
+        <p id="product-desc" style="margin-top:12px">Product description — replace with actual text.</p>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <button class="btn" id="add-to-cart">Add to Cart</button>
+          <button class="btn btn-ghost" id="buy-now">Buy Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

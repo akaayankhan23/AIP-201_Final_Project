@@ -1,0 +1,70 @@
+<!-- Save as about.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — About Us</title>
+  <meta name="description" content="About Rangrej Tower" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area">
+        <label class="sr-only" for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search products..." />
+      </div>
+      <nav class="nav-right" aria-label="Main">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card about-hero" aria-labelledby="about-heading">
+      <div style="flex:1">
+        <h1 id="about-heading">About Rangrej Tower</h1>
+        <p class="muted">We curate quality fashion for every day. Fast delivery, easy returns and honest prices.</p>
+        <p><strong>Mission:</strong> Make stylish fashion accessible and affordable.</p>
+        <a class="btn" href="products.html">Browse Products</a>
+      </div>
+
+      <figure style="width:420px">
+        <!-- REPLACE: Team or shop image path -->
+        <img src="assets/about/about-placeholder.jpg" alt="Team or store photo — replace" style="width:100%;height:auto;border-radius:8px" />
+      </figure>
+    </section>
+
+    <h2 class="section-title">Our values</h2>
+    <div class="features-grid">
+      <div class="feature card-compact">
+        <h3>Quality</h3>
+        <p class="muted">Handpicked materials & thorough checks.</p>
+      </div>
+      <div class="feature card-compact">
+        <h3>Customer-first</h3>
+        <p class="muted">Easy returns and friendly support.</p>
+      </div>
+      <div class="feature card-compact">
+        <h3>Sustainability</h3>
+        <p class="muted">We prefer sustainable suppliers.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

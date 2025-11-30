@@ -1,0 +1,82 @@
+<!-- Save as index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — Home</title>
+  <meta name="description" content="Rangrej Tower - Fashion & Accessories. Shop latest trends." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <!-- Header (same across pages) -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area" role="search">
+        <label for="searchInput" class="sr-only">Search products</label>
+        <input id="searchInput" type="search" placeholder="Search products, brands, categories..." />
+      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main">
+    <!-- HERO -->
+    <section class="card-hero" aria-labelledby="hero-heading">
+      <div class="hero-left">
+        <h1 id="hero-heading" class="hero-title">Rangrej Tower</h1>
+        <p class="hero-sub">Style, quality & amazing deals — curated for you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-lg" href="products.html">Shop Now</a>
+          <a class="btn btn-ghost" href="about.html">Learn More</a>
+        </div>
+      </div>
+
+      <figure class="hero-image" aria-hidden="false">
+        <!-- REPLACE: hero image path. Recommended: assets/hero/hero-1.jpg -->
+        <img src="main.avif" alt="Model wearing trending outfit — replace with your hero image" />
+      </figure>
+    </section>
+
+    <!-- Popular picks (rendered by app.js or static) -->
+    <section aria-labelledby="popular-heading">
+      <h2 id="popular-heading" class="section-title">Popular picks</h2>
+      <div id="popular-list" class="product-grid" aria-live="polite">
+        <!-- JS will populate cards here. If you want static placeholders, replace below images -->
+        <!-- Example product card (you can keep or let JS render) -->
+        <article class="card product" role="article">
+          <img src="" alt="Product 1 — replace" />
+          <h3 class="title">Product name (replace)</h3>
+          <div class="meta">Rating: ★4.5</div>
+          <div class="price-row">
+            <div class="price">₹999</div>
+            <div class="old-price muted">₹1,299</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openQuickView && openQuickView('p1')">Quick View</button>
+            <a class="btn btn-ghost" href="product.html?id=p1">Open</a>
+          </div>
+        </article>
+        <!-- remove or replace these placeholder cards after adding JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

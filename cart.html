@@ -1,0 +1,49 @@
+<!-- Save as cart.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — Cart</title>
+  <meta name="description" content="Your cart items" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="cart">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area" role="search">
+        <label class="sr-only" for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search products..." />
+      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div id="cart-wrapper" aria-live="polite">
+      <!-- app.js will render the cart table here.
+           If you want static sample row (remove when using JS): -->
+      <div class="card">
+        <p>Your cart is empty. <a class="btn btn-ghost" href="products.html">Shop now</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

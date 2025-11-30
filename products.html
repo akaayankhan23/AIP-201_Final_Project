@@ -1,0 +1,68 @@
+<!-- Save as products.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rangrej Tower — Products</title>
+  <meta name="description" content="Browse products at Rangrej Tower" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="products">
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rangrej Tower</a>
+      <div class="search-area" role="search">
+        <label class="sr-only" for="searchInput">Search products</label>
+        <input id="searchInput" type="search" placeholder="Search products, brands, categories..." />
+      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="nav-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header class="page-top" aria-hidden="false">
+      <h1>All Products</h1>
+      <div class="controls" aria-hidden="false">
+        <label for="sortSelect" class="sr-only">Sort products</label>
+        <select id="sortSelect" onchange="applyFilters()">
+          <option value="default">Sort: Popular</option>
+          <option value="price-asc">Price: Low → High</option>
+          <option value="price-desc">Price: High → Low</option>
+        </select>
+
+        <label for="categorySelect" class="sr-only">Filter category</label>
+        <select id="categorySelect" onchange="applyFilters()">
+          <option value="all">All Categories</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="accessory">Accessory</option>
+        </select>
+      </div>
+    </header>
+
+    <section aria-labelledby="products-heading">
+      <h2 id="products-heading" class="sr-only">Products list</h2>
+      <div id="product-grid" class="product-grid" aria-live="polite">
+        <!-- JS will render product cards here.
+             If you want static placeholder cards, copy the card structure from index.html and replace images -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Rangrej Tower</div>
+      <div class="muted">Made with ❤️ — HTML · CSS · JS</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
